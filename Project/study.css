@@ -59,4 +59,31 @@
     background-color: #D2003F; /* 마우스 오버 시 버튼 배경색 변경 */
 }
 
+.lecture-container {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-top: 20px; /* 버튼과 강의 목록 사이의 간격 */
+}
+
+.lecture-title {
+    font-size: 24px; /* 제목 글자 크기 */
+    color: #D2003F; /* 제목 글자 색상 */
+    margin-bottom: 15px; /* 제목과 강의 목록 사이의 간격 */
+    justify-content: left;
+}
+
+.lecture-list {
+    display: flex; /* 가로 정렬을 위해 flexbox 사용 */
+    justify-content: center; /* 가운데 정렬 */
+}
+
+.lecture-item {
+    width: 300px; /* 사각형 너비 */
+    height: 250px; /* 사각형 높이 */
+    background-color: #f0f0f0; /* 사각형 배경 색상 */
+    margin: 30px 30px; /* 사각형 간의 좌우 간격 */
+    line-height: 150px; /* 텍스트를 사각형 중앙에 배치 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    border: 1px solid #ccc; /* 사각형 테두리 */
+}
+
 
