@@ -1,4 +1,17 @@
-        /* 메뉴바 스타일 */
+       
+       
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+	font-family: 'NPSfontBold';
+}
+       
+       /* 메뉴바 스타일 */
         .menu-bar {
             margin-top: 40px;
             margin-left: 30px;
@@ -90,41 +103,62 @@
 
 .lecture-item .lecture-text {
     padding: 5px; /* 내부 여백을 줄임 */
-    margin-top: 5px; /* 상하 마진 제거 */
+    margin-top: 10px; /* 상하 마진 제거 */
     line-height: 1.2; /* 텍스트 라인 간의 간격 조정 */
     display: block; /* 각 텍스트를 블록 요소로 처리 */
     color: #767676;
     font-size: 16px;
 }
-.lecture-item
 
-
-.lecture-list .lecture-item:nth-child(1) .lecture-text:nth-child(1) {
-    font-weight: bold; /* 글자 굵게 */
-    color: #D2003F; /* 글자 색상 변경 */
-    font-size: 20px;
-    margin-top: 250px;
-}
-.lecture-list .lecture-item:nth-child(1) .lecture-text:nth-child(2) {
-    display: inline-block; /* 인라인 요소를 인라인 블록으로 변경 */
-    width: 100%; /* 전체 너비를 차지하도록 설정 */
-    text-align: left; /* 텍스트를 왼쪽으로 정렬 */
-}
-
-.lecture-list .lecture-item:nth-child(2) .lecture-text:nth-child(1) {
-    font-weight: bold; /* 글자 굵게 */
-    color: #D2003F; /* 글자 색상 변경 */
-    font-size: 20px;
-}
-.lecture-list .lecture-item:nth-child(3) .lecture-text:nth-child(1) {
-    font-weight: bold; /* 글자 굵게 */
-    color: #D2003F; /* 글자 색상 변경 */
-    font-size: 20px;
-}
-.lecture-list .lecture-item:nth-child(4) .lecture-text:nth-child(1) {
+.lecture-list .lecture-item:nth-child(1) .lecture-text:nth-child(3) {
     font-weight: bold; /* 글자 굵게 */
     color: #D2003F; /* 글자 색상 변경 */
     font-size: 20px;
 }
 
+.lecture-list .lecture-item:nth-child(2) .lecture-text:nth-child(3) {
+    font-weight: bold; /* 글자 굵게 */
+    color: #D2003F; /* 글자 색상 변경 */
+    font-size: 20px;
+}
+.lecture-list .lecture-item:nth-child(3) .lecture-text:nth-child(3) {
+    font-weight: bold; /* 글자 굵게 */
+    color: #D2003F; /* 글자 색상 변경 */
+    font-size: 20px;
+}
+.lecture-list .lecture-item:nth-child(4) .lecture-text:nth-child(3) {
+    font-weight: bold; /* 글자 굵게 */
+    color: #D2003F; /* 글자 색상 변경 */
+    font-size: 20px;
+}
 
+.lecture-item img {
+    width: 300px; /* 이미지의 너비 */
+    height: 200px; /* 이미지의 높이를 자동으로 조절하여 비율을 유지 */
+    display: block; /* 이미지를 블록 레벨 요소로 만들어 줄 바꿈 */
+    margin: 0 auto 30px; /* 이미지를 수평 중앙에 배치하고, 하단에 20px 마진 추가 */
+}
+
+.start-study-container {
+    display: flex;
+    flex-direction: row; /* 버튼들을 가로로 정렬 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 방향에서 가운데 정렬 */
+    padding: 0px;
+}
+
+.start-study-button {
+    margin: 5px 90px; /* 상하 마진을 10px, 좌우 마진을 50px로 조절 */
+    padding: 10px 20px; /* 내부 여백 */
+    font-size: 22px; /* 글자 크기 */
+    background-color: #D2003F; /* 배경색 */
+    color: white; /* 글씨색 */
+    border: none; /* 테두리 제거 */
+    border-radius: 30px; /* 모서리 둥글게 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+    transition: background-color 0.3s; /* 배경색 변경 효과 */
+}
+
+.start-study-button:hover {
+    background-color: #f47171; /* 마우스 오버 시 배경색 변경 */
+}
