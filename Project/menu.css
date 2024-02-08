@@ -1,0 +1,31 @@
+/* 메뉴바 스타일 */
+.menu-bar {
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: #D2003F;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* 메뉴 항목 스타일 */
+.menu-item {
+    display: flex;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 200px;
+    position: relative;
+}
+
+/* 메뉴 항목 호버 효과 */
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+/* 메뉴 로고 스타일 */
+.menu-logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
