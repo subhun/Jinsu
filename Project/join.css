@@ -1,0 +1,117 @@
+
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NPSfontBold';
+}
+
+/* 메뉴바 스타일 */
+.menu-bar {
+    margin-top: 40px;
+    margin-left: 30px;
+    background-color: #D2003F;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+/* 메뉴 항목 스타일 */
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 200px;
+    position: relative;
+    margin-right: 20px;
+}
+
+/* 메뉴 항목 호버 효과 */
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+/* 메뉴 로고 스타일 */
+.menu-logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+table {
+    margin: 50px auto;
+}
+
+input[type="text"] {
+    font-size: 24px;
+    border-radius: 5px;
+    border-color: #cfcfcf;
+
+}
+
+input[type="password"] {
+    font-size: 24px;
+    border-radius: 5px;
+    border-color: #cfcfcf;
+
+}
+
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="radio"] {
+    transform: scale(1.5);
+    font-size: 32px;
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked {
+    background-color: #D2003F;
+
+}
+
+
+
+.submit-button {
+    display: block;
+    margin: 0 auto;
+    background-color: #D2003F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.submit-button:hover {
+    background-color: #B70037;
+}
