@@ -32,7 +32,7 @@
             position: relative;
             margin-right: 20px;
             cursor: pointer; /* 마우스 오버 시 커서 변경 */
-
+            text-decoration: none; /* 밑줄 제거 */
 
         }
 
@@ -57,6 +57,7 @@
 }
 
 .study-button {
+    text-decoration: none; /* 밑줄 제거 */
     margin: 10px 20px; /* 버튼 간의 상하 간격을 10px, 좌우 간격을 20px로 설정 */
     padding: 10px 40px; /* 버튼 내부 여백 */
     font-size: 25px; /* 글자 크기 */
