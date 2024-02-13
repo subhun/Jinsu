@@ -15,7 +15,7 @@
         </a>
         <a href="studyKorean.html" class="menu-item">공부하러가기</a>
         <a href="schedule.html" class="menu-item">스케줄관리</a>
-        <a href="comunity.html" class="menu-item">커뮤니티</a>
+        <a href="community.html" class="menu-item">커뮤니티</a>
         <a href="notice.html" class="menu-item">공지사항</a>
     </div>
     <section class="notice">
@@ -37,12 +37,16 @@
                 <div id="content">
                     <textarea name="content" id="ucontent" placeholder="내용을 입력해주세요" required></textarea>
                 </div>
-                <input type="file" name="SelectFile" />
+                <input type="file" id="fileInput" style="display: none;" />
+                <!-- 사용자 정의 스타일을 적용할 label -->
+                <label for="fileInput" id="fileLabel">파일선택</label>
                 <div class="bt_se">
-                    <button type="submit">글 작성</button>
+                    <button type="submit" class="writeOk">작성완료</button>
                 </div>
             </div>
         </div>
+        <script src="community_write.js">
+        </script>
 </body>
 
 </html>

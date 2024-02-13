@@ -30,6 +30,7 @@ section.notice {
 
 /*글 제목*/
 #utitle {
+    border-radius: 5px;
     font-size: 15px;
     margin: 0 auto;
     display: block;
@@ -37,16 +38,59 @@ section.notice {
     height: 20px;
     resize: none;
 }
+
 /*글 내용*/
 #ucontent {
-
+    border-radius: 5px;
     font-size: 15px;
     margin: 0 auto;
     display: block;
     width: 800px;
-    height:300px;
+    height: 300px;
     resize: none;
 }
-.SelectFile{
-margin: 0 auto;
+
+input[type=file] {
+    background-color: #cacaca;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 545px;
+}
+
+#fileLabel {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #D2003F;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 545px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#fileLabel:hover {
+    background-color: #B70037;
+}
+
+.writeOk {
+    position: fixed;
+    display: block;
+    background-color: #D2003F;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 545px;
+    margin-bottom: 100px;
+}
+
+.writeOk:hover {
+    background-color: #B70037;
 }
