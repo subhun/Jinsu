@@ -111,3 +111,15 @@ input[type="radio"]:checked {
 .submit-button:hover {
     background-color: #B70037;
 }
+.joinPage{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.joinPage a{
+    color: gray;
+}
+.joinPage a:not(:first-child) {
+    margin-left: 30px;
+    /* 첫 번째 a태그를 제외하고 왼쪽 마진으로 간격 조정 */
+}

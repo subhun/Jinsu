@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NPSfontBold';
+}
+
+section.notice {
+    padding: 80px 0 0px 0;
+}
+
+.h3 {
+    text-align: left;
+}
+
+.page-title {
+    margin-bottom: 30px;
+}
+
+.page-title h3 {
+    font-size: 40px;
+    color: #D2003F;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*글 제목*/
+#utitle {
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 800px;
+    height: 20px;
+    resize: none;
+}
+/*글 내용*/
+#ucontent {
+
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+    width: 800px;
+    height:300px;
+    resize: none;
+}
+.SelectFile{
+margin: 0 auto;
+}
