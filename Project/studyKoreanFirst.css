@@ -79,11 +79,60 @@ a{
 }
 /* subtitle 내의 모든 span에 대한 스타일 */
 .subtitle span {
-    display: block; /* 각 span을 블록 레벨 요소로 만들어 줄 바꿈 처리 */
-    margin-bottom: 20px; /* 하단 마진으로 간격 추가 */
+    display: inline-block; /* 각 span을 인라인-블록 요소로 처리 */
+    margin-right: 1000px; /* 오른쪽 마진으로 간격 추가 */
 }
 
-/* lessen 클래스에 대한 특별한 스타일 */
-.subtitle .lessen {
-    margin-bottom: 0; /* lessen 클래스를 가진 span의 하단 마진 제거 또는 조절 */
+/* 마지막 span 요소에 대한 마진 제거 */
+.subtitle span:last-child {
+    margin-right: 0; /* 마지막 span 요소의 오른쪽 마진 제거 */
+}
+.course-table{
+    margin: 20px 100px 20px 100px; /* subtitle과의 간격 */
+    text-align: center; /* 텍스트 왼쪽 정렬 */
+    font-size: 20px;
+    border: 2px;
+    border-top: #D2003F;
+}
+.course-table table {
+    width: 100%; /* 테이블의 너비를 부모 요소에 맞춤 */
+    border-collapse: collapse; /* 테이블 셀 사이의 경계선을 하나로 합침 */
+    
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd; /* 셀 경계선 스타일 */
+    padding: 20px 0; /* 셀 내부 여백 */
+    
+}
+
+.course-table th {
+    background-color: #f2f2f2; /* 테이블 헤더 배경색 */
+    color: #D2003F; /* 테이블 헤더 글자색 */
+    border-bottom: 5px solid #000; /* 테이블 헤더 하단 테두리 색상과 두께 조절 */
+}
+
+/* 첫 번째 열(강의 제목)에 대한 스타일 */
+.course-table td:first-child {
+    font-weight: bold; /* 첫 번째 열 글자 굵게 */
+}
+
+/* 테이블의 각 행에 대한 호버 효과 */
+.course-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* 수평선만 표시하기 위해 세로선에 대한 스타일 제거 */
+.course-table tr, .course-table th, .course-table td {
+    border: none; /* 세로선 제거 */
+}
+
+/* 가로선만 표시 */
+.course-table tr {
+    border-bottom: 1px solid #ddd; /* 가로선에 대해서만 테두리 적용 */
+}
+
+.course-table table td.setitle{
+    text-align: left;
+    padding-left: 550px;
 }
