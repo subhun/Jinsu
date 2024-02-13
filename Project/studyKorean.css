@@ -47,6 +47,11 @@
             left: 20px;
             top: 20px;
         }
+
+        a{
+         text-decoration: none; /* 밑줄 제거 */
+        }
+    
 .button-container {
     display: flex;
     flex-direction: row; /* 버튼들을 수직으로 정렬 */
