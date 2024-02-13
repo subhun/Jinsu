@@ -15,7 +15,7 @@ table {
 }
 
 section.notice {
-    padding: 80px 0;
+    padding: 80px 0 0px 0;
 }
 
 .h3 {
@@ -27,7 +27,7 @@ section.notice {
 }
 
 .page-title h3 {
-    font-size: 28px;
+    font-size: 40px;
     color: #D2003F;
     font-weight: 400;
     text-align: center;
@@ -35,10 +35,11 @@ section.notice {
 
 
 .board-table {
-    font-size: 13px;
+    font-size: 20px;
     width: 100%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    padding: 80px 0 40px 0;
 }
 
 .board-table a {
@@ -169,8 +170,29 @@ section.notice {
     height: 1px;
 }
 
+/*글쓰기 버튼입니다.*/
+
+.submit-button {
+    position: fixed;
+    display: block;
+    right: 10px;
+
+    background-color: #D2003F;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 450px;
+    margin-bottom: 100px;
+}
+
+
 /*여기서부터 페이지네이션 스타일 설정입니다.*/
 .page {
+    position: fixed; /* 위치 고정*/
+    bottom: 80px; /*아래에서 80px*/
     text-align: center;
     width: 100%;
 }
@@ -193,7 +215,7 @@ section.notice {
 .pagination a {
     float: left;
     display: block;
-    font-size: 14px;
+    font-size: 20px;
     text-decoration: none;
     padding: 5px 12px;
     color: #96a0ad;
