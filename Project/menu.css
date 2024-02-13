@@ -29,3 +29,8 @@
     left: 20px;
     top: 20px;
 }
+
+/*마우스 떠날 시 밑줄제거*/
+a{
+    text-decoration: none; /* 밑줄 제거 */
+   }
