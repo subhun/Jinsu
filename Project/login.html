@@ -14,7 +14,7 @@
         </a>
         <a href="studyKorean.html" class="menu-item">공부하러가기</a>
         <a href="schedule.html" class="menu-item">스케줄관리</a>
-        <a href="comunity.html" class="menu-item">커뮤니티</a>
+        <a href="community.html" class="menu-item">커뮤니티</a>
         <a href="notice.html" class="menu-item">공지사항</a>
     </div>
     <br>
@@ -41,31 +41,40 @@
             </tr>
 
         </table>
+        <!--로그인 버튼-->
         <button type="submit" class="submit-button">로그인</button>
+
+
     </form>
+    <!--회원가입 페이지-->
+    <div class="joinPage" style="display: flex; align-items: center; justify-content: center;">
+        <a href="#" class="findId">ID찾기</a>
+        <a>|</a>
+        <a href="#" class="findPw">PW찾기</a>
+        <a>|</a>
+        <a href="join.html" class="makeId">회원가입</a>
 
 
 
 
+        <script>
+            // 1. 생년월일 8글자를 자동 .찍어주는기능 ex)19950512 >> 1995.05.12
+            function formatBirthdate(input) {
+                // 입력한 생년월일 값 가져오기
+                var value = input.value;
 
-    <script>
-        // 1. 생년월일 8글자를 자동 .찍어주는기능 ex)19950512 >> 1995.05.12
-        function formatBirthdate(input) {
-            // 입력한 생년월일 값 가져오기
-            var value = input.value;
+                // 입력값이 8자리인지 확인
+                if (value.length === 8) {
+                    // 생년, 월, 일로 나누어 배열에 저장
+                    var year = value.substring(0, 4);
+                    var month = value.substring(4, 6);
+                    var day = value.substring(6, 8);
 
-            // 입력값이 8자리인지 확인
-            if (value.length === 8) {
-                // 생년, 월, 일로 나누어 배열에 저장
-                var year = value.substring(0, 4);
-                var month = value.substring(4, 6);
-                var day = value.substring(6, 8);
-
-                // 포맷을 변경하여 다시 입력란에 적용
-                input.value = year + "." + month + "." + day;
+                    // 포맷을 변경하여 다시 입력란에 적용
+                    input.value = year + "." + month + "." + day;
+                }
             }
-        }
-    </script>
+        </script>
 </body>
 
 </html>

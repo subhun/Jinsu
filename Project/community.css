@@ -87,7 +87,9 @@ section.notice {
 .board-table tbody th p {
     display: none;
 }
-
+#bot{
+    background-color: red;
+}
 .btn {
     display: inline-block;
     padding: 0 30px;
@@ -183,7 +185,7 @@ section.notice {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 450px;
     margin-bottom: 100px;
 }
