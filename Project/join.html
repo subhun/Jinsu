@@ -23,7 +23,7 @@
     <br>
     <img src="./이미지/로고.png" alt="" width="200px" onclick="goToHomePage()">
     <h1>회원가입</h1>
-    <form action="#" method="POST">
+    <form action="join.js" method="POST" name="join">
         <table>
             <tr>
                 <!-- 아이디 입력란-->
@@ -62,7 +62,7 @@
                 </td>
             </tr>
         </table>
-        <button type="submit" class="submit-button">가입하기</button>
+        <button type="submit" class="submit-button" onclick="submitForm()">가입하기</button>
     </form>
 
 
@@ -85,6 +85,7 @@
             }
         }
     </script>
+    <script src="join.js"></script>
 </body>
 
 </html>
